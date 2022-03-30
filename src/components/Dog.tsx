@@ -21,7 +21,7 @@ const DogCard: FunctionComponent<IDogCard> = (
             </div>            
             <div className={dogStyles.buttons}>
                 <p>{name}</p>
-                <button className={like ? `${dogStyles.like} ${dogStyles.liked}` : dogStyles.like} onClick={() => handleUpdateDog({id, img, name, like} as Dog)}>♥</button>                
+                <button className={like ? `${dogStyles.like} ${dogStyles.liked}` : dogStyles.like} onClick={() => handleUpdateDog({id, img, name, like} as Dog)}>♡</button>                
                 <button className={dogStyles.delete} onClick={() => handleDeleteDog(id)}>Delete</button>
             </div>
         </li>
